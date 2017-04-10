@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, width=device-width,user-scalable=no"/>
-		<title>动画练习</title>
+		<title>-我的微信-动画练习</title>
 		<!--<script src="js/jquery-2.1.0.js"></script>-->
 		<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
 		<style type="text/css">
@@ -224,9 +224,9 @@
 			<img class="text" src="images/text.png" alt="文字内容" title="文字内容"  />
 			
 			<div class="btn" onclick="playOn()">
-				
-			<img class="muted" src="images/muted.png" alt="静音" title="静音"  />
 			<img class="sound" src="images/sound.png" alt="音乐" title="音乐"  />
+			<img class="muted" src="images/muted.png" alt="静音" title="静音"  />
+			
 			</div>
 			
 			</div>
@@ -246,7 +246,7 @@
 				
 			</div>
 			
-			<audio src="images/music.mp3" id="music" loop="loop" preload="auto">
+			<audio src="images/music.mp3" id="music" loop="loop" preload="auto" autoplay="autoplay">
 				
 			</audio>
 		</div>
@@ -259,7 +259,7 @@
 			
 			var $music = document.getElementById("music");
 			
-			var isOn = 0;
+			var isOn = 1;
 			
 			function playOn(){
 				
